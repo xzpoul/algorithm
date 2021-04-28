@@ -42,7 +42,6 @@ public class CountNumOfNiceSubArrays {
         for (int i = 1; i <= n; i++) {
             s[i] = s[i - 1] + nums[i - 1] % 2;// &1位与运算
             count[s[i]]++;
-            System.out.println("前缀和下标：" + i + " 对应数组下标：" + (i - 1) + " 前缀和：" + s[i]);
         }
 
         int ans = 0;
